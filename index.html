@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>隊訓報告</title>
+
+		<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="node_modules/reveal.js/css/theme/black.css">
+        
+        <link rel="stylesheet" href="css/obnoxious.css">
+
+        <link rel="stylesheet" href="css/numberAnimate.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/css/table.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+
+        <style>
+        #ityped {
+            font-size: 50px;
+            opacity: 1;
+        }
+        </style>
+
+        <script src="node_modules/ityped/dist/index.js"></script>
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-background="src/color.png">
+						<h2 class="animated infinite shakeit" style="animation-duration: 2s;">107學年度下學期</h2>
+                        <h2 class="animated infinite shakeit" style="animation-duration: 2s;">電腦維修服務隊期中隊訓</h2>
+                        <span id="ityped"></span>
+                    </section>
+					<!-- <section data-background="src/color.png">
+                        <h2>本日到場人數<span id="lines">0</span></h2>
+                    </section> -->
+					<section data-background="src/color.png">
+						<h2 class="animated infinite intensifies" style="animation-duration: 1.5s;">隊訓行程</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>時間</th>
+									<th>項目</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>08:50~09:00</td>
+									<td>隊員簽到</td>
+								</tr>
+								<tr>
+									<td>09:00~09:30</td>
+									<td>聖誕活動比賽結案</td>
+								</tr>
+								<tr>
+									<td>09:30~10:00</td>
+									<td>送舊活動</td>
+								</tr>
+								<tr>
+									<td>10:00~11:00</td>
+									<td>幹部隊務報告</td>
+								</tr>
+								<tr>
+									<td>11:00~12:00</td>
+									<td>幹部甄選</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="src/color.png">
+						<h2 class="animated infinite wobble" style="animation-duration: 1.5s;">隊訓行程</h2>
+						<table>
+							<thead>
+							<tr>
+								<td>13:10~14:00</td>
+								<td>電腦硬體教學</td>
+							</tr>
+							<tr>
+								<td>14:00~15:00</td>
+								<td>10pe更新</td>
+							</tr>
+							<tr>
+								<td>15:00~15:30</td>
+								<td>Synology nas更新介紹</td>
+							</tr>
+							<tr>
+								<td>​​15:30~16:00</td>
+								<td>設定網路印表機</td>
+							</tr>
+							<tr>
+								<td>​​16:00~</td>
+								<td>隊務及班長檢討</td>
+							</tr>
+							<tr>
+								<td>17:00~</td>
+								<td>指導員總結與補充說明</td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+                </section>
+                <section>
+                    <section>
+                        
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+        <script src="node_modules/reveal.js/js/reveal.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
+					{ src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'node_modules/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+            });
+            
+            ityped.init("#ityped")
+            ityped.init("#ll", { 
+                showCursor: false, 
+                disableBackTyping: true, 
+                placeholder: true
+            });
+
+            $('#lines').animateNumber({ number: 27 });
+		</script>
+	</body>
+</html>
